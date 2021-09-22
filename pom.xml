@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.dumptruckman.minecraft</groupId>
     <artifactId>JsonConfiguration</artifactId>
-    <version>1.2</version>
+    <version>1.1</version>
     <name>JsonConfiguration</name>
     <description>A JSON Configuration for Bukkit based on FileConfiguration.</description>
 
@@ -22,10 +22,6 @@
         <repository>
             <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>        </repository>
-        <repository>
-            <id>onarandombox</id>
-            <url>https://repo.onarandombox.com/content/groups/public/</url>
-        </repository>
     </repositories>
 
     <dependencies>
@@ -185,10 +181,6 @@
                             <goal>jar</goal>
                         </goals>
                         <configuration>
-                            <links>
-                                <link>http://jd.bukkit.org/apidocs/</link>
-                            </links>
-                            <linksource>true</linksource>
                             <!--dependencySourceExcludes>
                                 <dependencySourceExclude>com.intellij:*</dependencySourceExclude>
                             </dependencySourceExcludes-->
@@ -206,15 +198,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <distributionManagement>
-        <repository>
-            <id>OnARandomBox</id>
-            <url>http://repo.onarandombox.com/content/repositories/thirdparty/</url>
-        </repository>
-        <snapshotRepository>
-            <id>OnARandomBox</id>
-            <url>http://repo.onarandombox.com/content/repositories/thirdparty-dev/</url>
-        </snapshotRepository>
-    </distributionManagement>
 </project>
