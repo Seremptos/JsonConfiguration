@@ -57,7 +57,7 @@ public class JsonConfiguration extends FileConfiguration {
 
         Map<?, ?> input;
         try {
-            input = (Map<?, ?>) new JSONParser(JSONParser.USE_INTEGER_STORAGE).parse(contents);
+            input = (Map<?, ?>) new JSONParser(JSONParser.ACCEPT_TAILLING_SPACE|JSONParser.USE_INTEGER_STORAGE).parse(contents);
         } catch (ParseException e) {
             throw new InvalidConfigurationException("Invalid JSON detected.", e);
         } catch (ClassCastException e) {
