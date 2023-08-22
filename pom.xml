@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.dumptruckman.minecraft</groupId>
     <artifactId>JsonConfiguration</artifactId>
-    <version>1.1</version>
+    <version>1.1.1</version>
     <name>JsonConfiguration</name>
     <description>A JSON Configuration for Bukkit based on FileConfiguration.</description>
 
@@ -12,16 +12,17 @@
         <project.build.number>UNKNOWN</project.build.number>
     </properties>
 
-    <scm>
+    <!--<scm>
         <connection>scm:git:git://github.com/dumptruckman/PluginBase.git</connection>
         <url>https://github.com/dumptruckman/PluginBase</url>
         <developerConnection>scm:git:git@github.com:dumptruckman/PluginBase.git</developerConnection>
-    </scm>
+    </scm>-->
 
     <repositories>
         <repository>
             <id>spigot-repo</id>
-            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>        </repository>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -37,7 +38,7 @@
         <dependency>
             <groupId>net.minidev</groupId>
             <artifactId>json-smart</artifactId>
-            <version>2.4.7</version>
+            <version>2.5.0</version>
             <type>jar</type>
         </dependency>
         <!-- IntelliJ Annotations -->
