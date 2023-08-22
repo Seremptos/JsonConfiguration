@@ -6,6 +6,11 @@ package com.dumptruckman.bukkit.configuration.json;
 import com.dumptruckman.bukkit.configuration.SerializableSet;
 import com.dumptruckman.bukkit.configuration.util.SerializationHelper;
 import com.google.common.base.Charsets;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
+import net.minidev.json.JSONStyle;
 import net.minidev.json.JSONValue;
 import net.minidev.json.parser.JSONParser;
 import net.minidev.json.parser.ParseException;
@@ -45,8 +50,10 @@ public class JsonConfiguration extends FileConfiguration {
         if (dump.equals(BLANK_CONFIG)) {
             dump = "";
         }
-
-        return dump;
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        JsonElement je = new JsonParser().parse(dump);
+        //return dump;
+        return gson.toJson(je);
     }
 
     @Override
