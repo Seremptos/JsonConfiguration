@@ -50,7 +50,7 @@ public class JsonConfiguration extends FileConfiguration {
         if (dump.equals(BLANK_CONFIG)) {
             dump = "";
         }
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        Gson gson = new GsonBuilder().disableHtmlEscaping().setPrettyPrinting().create();
         JsonElement je = new JsonParser().parse(dump);
         //return dump;
         return gson.toJson(je);
