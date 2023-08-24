@@ -17,6 +17,13 @@
         <url>https://github.com/dumptruckman/PluginBase</url>
         <developerConnection>scm:git:git@github.com:dumptruckman/PluginBase.git</developerConnection>
     </scm>-->
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Seremptos Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/Seremptos/JsonConfiguration</url>
+        </repository>
+    </distributionManagement>
 
     <repositories>
         <repository>
