@@ -12,15 +12,15 @@ Maven Dependency Info
 ```xml
 <repositories>
     <repository>
-        <id>onarandombox</id>
-        <url>http://repo.onarandombox.com/content/groups/public</url>
+        <id>seremptos-github</id>
+        <url>https://maven.pkg.github.com/Seremptos/JsonConfiguration</url>
     </repository>
 </repositories>
 <dependencies>
     <dependency>
         <groupId>com.dumptruckman.minecraft</groupId>
         <artifactId>JsonConfiguration</artifactId>
-        <version>1.1</version>
+        <version>1.1.1</version>
     </dependency>
     <!-- Required json dependency because no other json lib can handle numbers appropriately. -->
     <dependency>
